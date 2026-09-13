@@ -1,0 +1,6 @@
+{
+  "name": "Nature Capsule",
+  "description": "A modern, high-contrast responsive landing hero section for plant-based wellness capsules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bg-glow" cx="75%" cy="20%" r="85%">
+      <stop offset="0%" stop-color="#9db868" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#425e2e" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#111e0c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#050804" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="sun-ray" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#f5eed2" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8cb054" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glass-bottle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="15%" stop-color="#a8c78b" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#2e4720" stop-opacity="0.35"/>
+      <stop offset="85%" stop-color="#a8c78b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="capsule-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#709345"/>
+      <stop offset="50%" stop-color="#4d702b"/>
+      <stop offset="100%" stop-color="#2b4217"/>
+    </linearGradient>
+    <radialGradient id="flower-petal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7db8"/>
+      <stop offset="80%" stop-color="#e03387"/>
+      <stop offset="100%" stop-color="#9c1556"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Atmospheric Background -->
+  <rect width="1920" height="1080" fill="#050804"/>
+  <rect width="1920" height="1080" fill="url(#bg-glow)"/>
+
+  <!-- Sun Rays streaming from top-right -->
+  <polygon points="1300,-50 1500,-50 1920,800 1200,1080" fill="url(#sun-ray)" />
+  <polygon points="1100,-50 1250,-50 1600,1080 1000,1080" fill="url(#sun-ray)" opacity="0.6" />
+  <polygon points="1500,-50 1700,-50 1920,500 1700,1080" fill="url(#sun-ray)" opacity="0.5" />
+
+  <!-- Background Soft Bokeh Circles -->
+  <circle cx="1050" cy="350" r="70" fill="#e8f5c8" opacity="0.22" filter="url(#glow)" />
+  <circle cx="1180" cy="220" r="90" fill="#fffad0" opacity="0.28" filter="url(#glow)" />
+  <circle cx="920" cy="420" r="50" fill="#e8f5c8" opacity="0.18" filter="url(#glow)" />
+  <circle cx="1650" cy="280" r="80" fill="#fffad0" opacity="0.2" filter="url(#glow)" />
+  <circle cx="1450" cy="150" r="110" fill="#ffffff" opacity="0.25" filter="url(#glow)" />
+
+  <!-- Mossy Forest Floor Bed -->
+  <path d="M 650 1080 Q 900 850 1250 820 T 1920 860 L 1920 1080 Z" fill="#223b18" />
+  <path d="M 750 1080 Q 1100 830 1400 800 T 1920 820 L 1920 1080 Z" fill="#395c25" />
+  <path d="M 900 1080 Q 1250 810 1550 780 T 1920 800 L 1920 1080 Z" fill="#4d7a32" />
+
+  <!-- Delicate Pink Woodland Flowers on Bed -->
+  <!-- Flower 1 -->
+  <g transform="translate(1120, 800)">
+    <ellipse cx="0" cy="-14" rx="7" ry="14" fill="url(#flower-petal)" />
+    <ellipse cx="13" cy="-5" rx="7" ry="14" transform="rotate(72 13 -5)" fill="url(#flower-petal)" />
+    <ellipse cx="8" cy="12" rx="7" ry="14" transform="rotate(144 8 12)" fill="url(#flower-petal)" />
+    <ellipse cx="-8" cy="12" rx="7" ry="14" transform="rotate(216 -8 12)" fill="url(#flower-petal)" />
+    <ellipse cx="-13" cy="-5" rx="7" ry="14" transform="rotate(288 -13 -5)" fill="url(#flower-petal)" />
+    <circle cx="0" cy="0" r="4" fill="#ffe680" />
+  </g>
+  <!-- Flower 2 -->
+  <g transform="translate(1010, 850) scale(0.85)">
+    <ellipse cx="0" cy="-14" rx="7" ry="14" fill="url(#flower-petal)" />
+    <ellipse cx="13" cy="-5" rx="7" ry="14" transform="rotate(72 13 -5)" fill="url(#flower-petal)" />
+    <ellipse cx="8" cy="12" rx="7" ry="14" transform="rotate(144 8 12)" fill="url(#flower-petal)" />
+    <ellipse cx="-8" cy="12" rx="7" ry="14" transform="rotate(216 -8 12)" fill="url(#flower-petal)" />
+    <ellipse cx="-13" cy="-5" rx="7" ry="14" transform="rotate(288 -13 -5)" fill="url(#flower-petal)" />
+    <circle cx="0" cy="0" r="4" fill="#ffe680" />
+  </g>
+  <!-- Flower 3 -->
+  <g transform="translate(1600, 880) scale(0.9)">
+    <ellipse cx="0" cy="-14" rx="7" ry="14" fill="url(#flower-petal)" />
+    <ellipse cx="13" cy="-5" rx="7" ry="14" transform="rotate(72 13 -5)" fill="url(#flower-petal)" />
+    <ellipse cx="8" cy="12" rx="7" ry="14" transform="rotate(144 8 12)" fill="url(#flower-petal)" />
+    <ellipse cx="-8" cy="12" rx="7" ry="14" transform="rotate(216 -8 12)" fill="url(#flower-petal)" />
+    <ellipse cx="-13" cy="-5" rx="7" ry="14" transform="rotate(288 -13 -5)" fill="url(#flower-petal)" />
+    <circle cx="0" cy="0" r="4" fill="#ffe680" />
+  </g>
+
+  <!-- Fallen Petals on Moss -->
+  <ellipse cx="1180" cy="860" rx="6" ry="12" transform="rotate(45 1180 860)" fill="url(#flower-petal)" opacity="0.9" />
+  <ellipse cx="1230" cy="880" rx="5" ry="10" transform="rotate(-30 1230 880)" fill="url(#flower-petal)" opacity="0.85" />
+  <ellipse cx="1480" cy="830" rx="6" ry="11" transform="rotate(60 1480 830)" fill="url(#flower-petal)" opacity="0.9" />
+  <ellipse cx="1540" cy="860" rx="5" ry="9" transform="rotate(15 1540 860)" fill="url(#flower-petal)" opacity="0.8" />
+
+  <!-- TerraElix Supplement Bottle Resting on Moss (Tilted ~12 deg) -->
+  <g transform="translate(1360, 480) rotate(-12)">
+    <!-- Bottle Shadow -->
+    <ellipse cx="10" cy="290" rx="110" ry="35" fill="#0d1708" opacity="0.8" />
+    
+    <!-- Clear Glass Bottle Body -->
+    <rect x="-95" y="0" width="190" height="280" rx="35" fill="#1e3314" fill-opacity="0.75" />
+    
+    <!-- Capsules inside bottle (Pattern of green herbal capsules) -->
+    <g opacity="0.92">
+      <rect x="-75" y="180" width="40" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(-20 -55 190)"/>
+      <rect x="-25" y="190" width="40" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(15 -5 200)"/>
+      <rect x="25" y="185" width="40" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(-10 45 195)"/>
+      <rect x="-60" y="140" width="42" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(35 -39 150)"/>
+      <rect x="-15" y="145" width="42" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(-25 6 155)"/>
+      <rect x="30" y="140" width="40" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(10 50 150)"/>
+      <rect x="-70" y="100" width="40" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(-15 -50 110)"/>
+      <rect x="-20" y="95" width="40" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(30 0 105)"/>
+      <rect x="25" y="100" width="42" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(-35 46 110)"/>
+      <rect x="-55" y="60" width="40" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(20 -35 70)"/>
+      <rect x="-5" y="55" width="42" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(-15 16 65)"/>
+      <rect x="28" y="60" width="38" height="20" rx="10" fill="url(#capsule-grad)" transform="rotate(25 47 70)"/>
+    </g>
+
+    <!-- Glass Highlights and reflections -->
+    <rect x="-95" y="0" width="190" height="280" rx="35" fill="url(#glass-bottle)" />
+
+    <!-- Bottle Label (Crisp White with TerraElix) -->
+    <g transform="rotate(90 0 140)">
+      <text x="-45" y="-12" font-family="sans-serif" font-size="36" font-weight="800" fill="#ffffff" letter-spacing="1">TerraElix</text>
+      <text x="-40" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#e0e0e0" letter-spacing="2">DIETARY SUPPLEMENT</text>
+      <text x="-38" y="34" font-family="sans-serif" font-size="10" font-weight="500" fill="#c5c5c5">60 Capsules</text>
+    </g>
+
+    <!-- Bottle Cap Neck & White Cap -->
+    <rect x="-55" y="-22" width="110" height="24" rx="4" fill="#222" />
+    <rect x="-65" y="-54" width="130" height="36" rx="6" fill="#ffffff" />
+    <!-- Cap Ridges -->
+    <line x1="-55" y1="-50" x2="-55" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="-40" y1="-50" x2="-40" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="-25" y1="-50" x2="-25" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="-10" y1="-50" x2="-10" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="5" y1="-50" x2="5" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="20" y1="-50" x2="20" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="35" y1="-50" x2="35" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="50" y1="-50" x2="50" y2="-22" stroke="#e5e5e5" stroke-width="2"/>
+  </g>
+
+</svg>
