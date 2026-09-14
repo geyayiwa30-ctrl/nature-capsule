@@ -37,11 +37,11 @@ export default function App() {
         className="relative w-full h-[320px] xs:h-[360px] sm:h-[400px] md:h-full md:min-h-0 md:max-h-none md:absolute md:inset-0 z-0 overflow-hidden shrink-0 pointer-events-none"
         aria-hidden="true"
       >
-        {/* The Live Video Element directly from ./assets/hero-video.mp4 */}
+        {/* The Live Video Element directly from ./assets/Background_Terra_Elix.mp4 */}
         <video
           ref={videoRef}
           id="hero-bg-video"
-          src="./assets/hero-video.mp4"
+          src="./assets/Background_Terra_Elix.mp4"
           poster="./assets/capsules.jpg"
           autoPlay
           loop
