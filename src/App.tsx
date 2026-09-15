@@ -334,11 +334,11 @@ export default function App() {
                 id="cta-section"
                 className="mt-8 sm:mt-10 md:mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-3.5 sm:gap-6"
               >
-                {/* White Solid Rectangular CTA Button */}
+                {/* White Solid Rounded CTA Button */}
                 <a
                   id="cta-explore-button"
                   href="#explore"
-                  className="group w-full sm:w-auto inline-flex items-center justify-center bg-white text-black px-8 sm:px-9 py-4 sm:py-4.5 text-base sm:text-[1.05rem] font-semibold tracking-tight transition-all duration-200 hover:bg-neutral-200 active:scale-[0.98]"
+                  className="group w-full sm:w-auto inline-flex items-center justify-center bg-white text-black rounded-full px-8 sm:px-9 py-4 sm:py-4.5 text-base sm:text-[1.05rem] font-semibold tracking-tight transition-all duration-200 hover:bg-neutral-200 active:scale-[0.98] shadow-lg"
                 >
                   <span>Explore Now</span>
                   <span className="ml-2.5 text-lg sm:text-xl transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
